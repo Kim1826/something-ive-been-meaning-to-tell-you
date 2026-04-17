@@ -10,7 +10,6 @@
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?color=F75C7E&center=true&vCenter=true&lines=Hey...;I+have+something+to+tell+you...;Please+read+until+the+end" />
 </p>
-# Message
 
 Hey. Good morning, noon, afternoon, evening, and midnight—I’m not sure what time you’ll end up reading this, but there’s something I’ve been wanting to say.
 
