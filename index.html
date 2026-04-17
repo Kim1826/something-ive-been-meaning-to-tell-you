@@ -24,30 +24,22 @@ index.html
       background: #fff;
     }
 
-    .message {
-      white-space: pre-wrap;
+    #text {
       font-size: 16px;
       line-height: 1.6;
-
-      opacity: 0;
-      transform: translateY(20px);
-      animation: appear 1.5s ease forwards;
-    }
-
-    @keyframes appear {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      white-space: pre-wrap;
+      border-right: 2px solid black;
+      display: inline;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="message">
+<div id="text"></div>
 
-Hey. Good morning, noon, afternoon, evening, and midnight—I’m not sure what time you’ll end up reading this, but there’s something I’ve been wanting to say.
+<script>
+const message = `Hey. Good morning, noon, afternoon, evening, and midnight—I’m not sure what time you’ll end up reading this, but there’s something I’ve been wanting to say.
 
 After this, we’ll probably never cross paths again anyway.😆 That’s why I finally have the courage to say this.😵 I hope you’ll read it well.
 
@@ -82,9 +74,20 @@ I wish you the best in whatever path you take after graduation. I hope the futur
 With sincerity and respect.
 
 NOTE:
-This message is intended for one person only. If you are not the intended recipient, you may close this page.
+This message is intended for one person only. If you are not the intended recipient, you may close this page.`;
 
-  </div>
+let i = 0;
+
+function typeWriter() {
+  if (i < message.length) {
+    document.getElementById("text").innerHTML += message.charAt(i);
+    i++;
+    setTimeout(typeWriter, 15);
+  }
+}
+
+typeWriter();
+</script>
 
 </body>
 </html>
